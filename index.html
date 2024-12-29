@@ -21,20 +21,25 @@
         header {
             background: linear-gradient(90deg, #00467f, #00bcd4);
             color: #fff;
-            padding: 2rem 0;
+            padding: 1.5rem 0;
             text-align: center;
             position: relative;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
         }
         header img {
             position: absolute;
             top: 50%;
             left: 20px;
             transform: translateY(-50%);
-            height: 60px;
+            height: 50px;
+        }
+        header .title {
+            font-size: 2rem;
+            margin: 0;
+        }
+        header .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
         }
         section {
             margin: 2.5rem 0;
@@ -113,7 +118,8 @@
 <body>
     <header>
         <img src="logo.png" alt="Logo MB HuntX">
-        <h1>MB HuntX - Giải pháp săn tìm mối đe dọa an ninh mạng</h1>
+        <h1 class="title">MB HuntX</h1>
+        <p class="subtitle">Giải pháp săn tìm mối đe dọa an ninh mạng</p>
     </header>
 
     <div class="container">
@@ -140,7 +146,7 @@
                 </div>
                 <div class="feature">
                     <img src="icon-ai.png" alt="Icon Tích hợp AI">
-                    <h3>Tích hợp AI</h3>
+                    <h3>Tích hợp AI <span class="future">(Tính năng tương lai)</span></h3>
                     <p>Sử dụng AI/ML nâng cao để phát hiện và xử lý mối đe dọa.</p>
                 </div>
                 <div class="feature">
@@ -150,7 +156,7 @@
                 </div>
                 <div class="feature">
                     <img src="icon-malware.png" alt="Icon Phân tích mã độc">
-                    <h3>Phân tích mã độc</h3>
+                    <h3>Phân tích mã độc <span class="future">(Tính năng tương lai)</span></h3>
                     <p>Sử dụng sandbox (CAPEv2) để phân tích hành vi mã độc tự động.</p>
                 </div>
                 <div class="feature">
