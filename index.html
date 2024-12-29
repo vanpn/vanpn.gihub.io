@@ -197,11 +197,47 @@
             </ul>
         </section>
 
+
         <section class="process">
             <h2>Quy trình hoạt động</h2>
-            <p><strong>Chế độ Isolated:</strong> Scanner portable chạy trên hệ thống không kết nối mạng, lưu trữ kết quả cục bộ.</p>
-            <p><strong>Chế độ Automated:</strong> Tự động hoá qua Ansible AWX, phân tích dữ liệu thời gian thực, tạo báo cáo tự động.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th>Isolated (Cô lập)</th>
+                        <th>Automated (Tự động hóa)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kết nối mạng</td>
+                        <td>Không yêu cầu</td>
+                        <td>Yêu cầu kết nối mạng</td>
+                    </tr>
+                    <tr>
+                        <td>Scanner</td>
+                        <td>Portable, chạy trực tiếp</td>
+                        <td>Portable, phân phối qua Ansible AWX</td>
+                    </tr>
+                    <tr>
+                        <td>Thu thập dữ liệu</td>
+                        <td>Lưu cục bộ, chuyển qua thiết bị ngoại vi</td>
+                        <td>Gửi trực tiếp về hệ thống trung tâm</td>
+                    </tr>
+                    <tr>
+                        <td>Phân tích</td>
+                        <td>Sau khi chuyển dữ liệu về trung tâm</td>
+                        <td>Thời gian thực</td>
+                    </tr>
+                    <tr>
+                        <td>Ứng dụng</td>
+                        <td>Hệ thống cô lập, không kết nối mạng</td>
+                        <td>Cloud, hệ thống lớn, Kubernetes</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+
 
         <section class="research">
             <h2>Hướng nghiên cứu và phát triển</h2>
